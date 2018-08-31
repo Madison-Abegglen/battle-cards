@@ -25,6 +25,9 @@ export default new Vuex.Store({
     },
     setOpponentChoice(state, data) {
       state.opponentChoice = data
+    },
+    clearGame(state) {
+      state.game = {}
     }
   },
   actions: {
@@ -57,6 +60,10 @@ export default new Vuex.Store({
     },
     playerChoice({ commit }, card) {
       commit('setPlayerChoice', card)
+    },
+    newGame({ commit }) {
+      commit('clearGame')
+      router.push({ name: 'battlecards' })
     }
   }
 })

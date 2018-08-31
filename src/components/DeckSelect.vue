@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row deck-select">
     <div class="col-sm-12">
       <h1>Battle <img alt="Vue logo" src="../assets/logo.png"> Cards</h1>
       <h2>Welcome...</h2>

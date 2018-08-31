@@ -1,7 +1,13 @@
 <template>
-    <div class="endGame container">
+    <div class="end-game">
         <div class="row justify-content-center">
-            <h1>End Game</h1>
+            <div v-if="game.player0.hand.length == 0 && game.player1.hand.length == 0">
+                <h1>End Game <br> Tie</h1>
+            </div>
+            <div v-if="game.winner" class="col-sm-12">
+                <h1>End Game <br> Winner is {{game.winner.name}}</h1>
+            </div>
+            <button @click="newGame">New Game</button>
         </div>
     </div>
 </template>
@@ -12,16 +18,12 @@ export default {
   computed: {
     game() {
       return this.$store.state.game;
-    },
-    player0() {
-      return this.$store.state.game.players[0];
-    },
-    player1() {
-      return this.$store.state.game.players[1];
     }
   },
   methods: {
-    winnerResult() {}
+    newGame() {
+      this.$store.dispatch("newGame");
+    }
   }
 };
 </script>
