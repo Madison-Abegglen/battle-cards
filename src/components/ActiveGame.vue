@@ -12,7 +12,7 @@
                         <h4>{{card.name}}</h4>
                     </div>
                     <div v-else>
-                        <img src="https://img00.deviantart.net/f5b0/i/2017/142/a/a/fantasy_card_back__4_by_gameliberty-db0fi11.png" alt="">
+                        <img src="https://vignette.wikia.nocookie.net/hearthstone/images/5/5d/Medivh%27s_Invitation_card_back.jpg/revision/latest?cb=20160801230533" alt="">
                     </div>
                 </div>
             </div> 

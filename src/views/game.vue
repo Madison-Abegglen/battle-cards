@@ -1,16 +1,19 @@
 <template>
   <div class="game">
       <active-game v-if="game.id" />
+      <end-game v-if="game.winner" /> 
   </div>
 </template>
 
 <script>
 import ActiveGame from "@/components/ActiveGame.vue";
+import EndGame from "@/components/EndGame.vue";
 
 export default {
   name: "game",
   components: {
-    ActiveGame
+    ActiveGame,
+    EndGame
   },
   props: ["gameId"],
   mounted() {

@@ -4,8 +4,6 @@
   </div>
 </template>
 
-import
-
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
