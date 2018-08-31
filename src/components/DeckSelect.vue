@@ -9,8 +9,6 @@
                 <input type="text" name="playerName" v-model="playerName" placeholder="Enter Player Name">
                 <button type="submit">Start Game</button>
             </form>
-        <!-- <h2>{{}}</h2>
-        <img :src="" alt=""> -->
         </div>
       </div>
     </div>
