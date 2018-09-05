@@ -1,7 +1,7 @@
 <template>
   <div class="game">
       <active-game v-if="game.id && !game.winner" />
-      <end-game v-if="game.winner" /> 
+      <end-game v-else /> 
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="end-game">
         <div class="row justify-content-center">
-            <div v-if="game.player0.hand.length == 0 && game.player1.hand.length == 0">
+            <div v-if="game.players[0].hand.length == 0 && game.players[1].hand.length == 0">
                 <h1>End Game <br> Tie</h1>
             </div>
             <div v-if="game.winner" class="col-sm-12">
